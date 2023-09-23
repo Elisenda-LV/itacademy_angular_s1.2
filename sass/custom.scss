@@ -13,9 +13,13 @@ $font-family-base: 'Montserrat', sans-serif;
 $btn-font-size: 12px;
 
 //image:
-$primary-border-subtle: #5265E1;
+$primary-border-subtle: $primary;
 
-//media query
+//tabs
+
+$nav-underline-gap:                 1rem;
+$nav-underline-border-width:        .125rem;
+$nav-underline-link-active-color:   $secondary;
 
 
 @import "../node_modules/bootstrap/scss/bootstrap";
