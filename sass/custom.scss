@@ -3,8 +3,6 @@
 //Color
 $primary: #5265E1;
 $secondary: #FA5959;
-$dark: #1f2f90;
-
 
 //Font-Family:
 $font-family-base: 'Montserrat', sans-serif;
@@ -16,17 +14,12 @@ $btn-font-size: 12px;
 //image:
 $primary-border-subtle: $primary;
 
-//tabs
-$nav-underline-gap:                 1rem;
-$nav-underline-border-width:        .125rem;
-$nav-underline-link-active-color:   $secondary;
-
-
-
 //shadow
 $box-shadow:                  0 .5rem 1rem rgba($primary, .15);
 
 
-
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+
+
 

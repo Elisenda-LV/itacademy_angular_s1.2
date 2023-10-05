@@ -11,45 +11,45 @@
 </head>
 <body>
     <header class="container">
-        <!-- ----- navbar----- -->
-        <nav class="navbar navbar-bg-light p-2 pb-5 pt-5 ">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img class="w-100" src="./img/logo-bookmark.svg" alt="bookmark logo"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-                aria-controls="offcanvasNavbar" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon "></span>
-                </button>
+        <nav class="navbar bg-emphasis mb-5 p-4 link-body-emphasis" data-bs-theme="light">
+            <a class="navbar-brand" href="#"><img src="./img/logo-bookmark.svg" alt="logo bookmark"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- ------offcanvas------ -->
+            <div class="offcanvas offcanvas-end opacity-75 p-4" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel" data-bs-theme="dark" >
 
-                <div class="offcanvas offcanvas-end navbar-dark offcanvas-bg-dark text-bg-dark opacity-75" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header p-5">
-                        <a class="navbar-brand" href="#"><img class="w-100" src="./img/logo-bookmark white.svg" alt="bookmark logo"></a>
-                        <button class="bg-dark border-0" type="button" data-bs-dismiss="offcanvas" aria-label="Close"><img src="./img/icon-close.svg" alt="close button"></button>
-                    </div>
-                    <div class="offcanvas-body d-block justify-content-center pe-5 ps-5">   
-                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0 gap-4">
-                            <li class="nav-item fw-bold border-top pt-3 text-center">
-                                <a class="nav-link" aria-current="page" href="#">FEATURES</a>
-                            </li>
-                            <li class="nav-item fw-bold border-top pt-3  text-center">
-                                <a class="nav-link" aria-current="page" href="#">PRICING</a>
-                            </li>
-                            <li class="nav-item fw-bold border-top pt-3 pb-3 text-center">
-                                <a class="nav-link" aria-current="page" href="#">CONTACT</a>
-                            </li>
-                        </ul>    
-                        <div class="col-12 nav-item border-top pt-3 text-center fw-medium d-grid pt-4">
-                            <button class="btn btn-lg btn-outline-light ps-3 pe-3 border-2" href="#" role="button">LOGIN</button>
-                        </div>
-                        <div class="col-12 mt-5 pt-5 pb-5 gap-4 d-flex justify-content-center col-sm-3 p-sm-5 justify-content-sm-end pe-sm-5">
-                            <div href="#"><a href="#"><img src="./img/icon-twitter.svg" alt="logo twitter"></a></div>
-                            <div href="#"><a href="#"><img src="./img/icon-facebook.svg" alt="logo facebook"></a></div>
-                        </div>  
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="./img/logo-bookmark white.svg" alt="bookmark logo white"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body" >
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 gap-3 align-items-center">
+                        <li class="nav-item ">
+                            <a class="nav-link active link-body-emphasis" aria-current="page" href="#">FEATURES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active link-body-emphasis" aria-current="page" href="#">PRICING</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active link-body-emphasis" aria-current="page" href="#">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#"><button class="btn btn-danger" type="button">LOGIN</button></a>
+                        </li>
+                    </ul>
+            
+                    <div class="offcanvas-header justify-content-center gap-5 mt-5 pt-5">
+                        <a class="nav-link" href="#"><img src="./img/icon-twitter.svg" alt="twitter icon white"></a>
+                        <a class="nav-link" href="#"><img src="./img/icon-facebook.svg" alt="facebook icon white"></a>
                     </div>
                 </div>
             </div>
-        </nav>
-      <!-- ----- header ----- -->
-        <div class="row d-flex justify-content-center">
+          </nav>
+
+
+      <!-- <----- header ----- --> 
+        <div class="row d-flex justify-content-center mt-5">
             <div class="col-12 col-sm-7 order-2 order-sm-1 justify-content-center justify-content-sm-start">
                 <h1 class="display-5 fw-bold text-center text-sm-start p-4 pe-sm-4 pt-sm-4 pb-sm-4">A Simple Bookmark Manager</h1>
                 <p class="text-body-secondary fw-light text-center text-sm-start p-3 pe-sm-4 pb-sm-4" >A clean and a simple interface to organize your favorite websites. Open a new
@@ -208,8 +208,8 @@
                         
                         <div class="card border-0">
                             <div class="card-header bg-white border-top-1" id="headingTwo">
-                                <div class="row mb-0" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <div class="col-10 "><button class="text-start btn btn-light fw-bold btn bg-white border-0" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="row mb-0" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    <div class="col-10 "><button class="text-start btn btn-light fw-bold btn bg-white border-0" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                                         How I can request a new browser?</button></div>
                                     <div class="col-2 text-end"><img class=""src="./img/icon-arrow.svg" alt="icono desplegable"></div>
                                 </div>
@@ -224,8 +224,8 @@
 
                         <div class="card border-0">
                             <div class="card-header bg-white border-top-1" id="headingThree">
-                                <div class="row mb-0" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <div class="col-10 "><button class="text-start btn btn-light fw-bold btn bg-white border-0" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="row mb-0" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                    <div class="col-10 "><button class="text-start btn btn-light fw-bold btn bg-white border-0" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
                                     Is there a mobile App?</button></div>
                                     <div class="col-2 text-end"><img class=""src="./img/icon-arrow.svg" alt="icono desplegable"></div>
                                 </div>
@@ -240,8 +240,8 @@
 
                         <div class="card border-0">
                             <div class="card-header bg-white" id="headingFour">
-                                <div class="row mb-0" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                    <div class="col-10 "><button class="text-start btn btn-light fw-bold btn bg-white border-0" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="row mb-0" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    <div class="col-10 "><button class="text-start btn btn-light fw-bold btn bg-white border-0" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
                                     What about other Chronium browsers?</button></div>
                                     <div class="col-2 text-end"><img class=""src="./img/icon-arrow.svg" alt="icono desplegable"></div>
                                 </div>
@@ -265,7 +265,7 @@
     </main>
 <!-- ------ footer ------------- -->
     <footer class="container-fluid bg-primary mt-5">
-        <form class="container-fluid bg-primary"> 
+        <form class="needs-validation bg-primary"> 
             <div class="row bg-primary pt-5 pb-3 ">
                 <div class="text-white text-center pt-5 ps-sm-5 fw-medium fs-5">35.000 ALREADY JOINED</div>
                 <div class="text-white text-center fw-bold fs-4 pt-3 pe-3 ps-3">Stay up-to-date with what we're doing</div>
@@ -273,11 +273,14 @@
             <div class="row bg-primary pb-5 d-sm-flex justify-content-center">
                 <div class="col-sm-3"></div>
                 <div class="col 12 col-sm-5 pe-sm-5  d-sm-block justify-content-sm-start">
-                    <label for="exampleInputEmail1" class="form-label"></label>
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email Adress">
+                    <label for="validationEmail" class="form-label"></label>
+                    <input type="email" class="form-control" id="validationEmail" aria-describedby="emailHelp" placeholder="Email Adress">
+                    <div class="valid-feedback">Perfect</div>
+                    <div class="invalid-feedback">Whoops, make sure it's an email</div>     
                 </div>
+                
                 <div class="col-12 d-grid col-sm-4 pb-5 pt-4 d-sm-block">
-                    <button type="submit" class="btn btn-secondary text-white fs-6">Contact Us</button>
+                    <button type="button" class="btn btn-secondary text-white fs-6">Contact Us</button>
                 </div>
             </div>
            
